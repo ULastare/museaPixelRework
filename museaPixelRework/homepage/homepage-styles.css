@@ -1,0 +1,82 @@
+/* Pixel Digivolve */
+@font-face {
+    font-family: 'Pixel Digivolve';
+    src: url('./fonts/Pixel Digivolve.otf') format('opentype');
+}
+
+/* Alte Haas Grotesk Regular */
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    src: url('./fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* Alte Haas Grotesk Bold */
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    src: url('./fonts/AlteHaasGroteskBold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    background-image: url(../plaatjes/homepageBackground2.png);
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.header {
+    padding: 15px;
+    padding-left: 35px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1920px;
+}
+
+.titel {
+    line-height: 0.2;
+}
+
+.titel h1 {
+    color: white;
+
+    font-size: 45px;
+
+    font-family: 'Pixel Digivolve', sans-serif;
+}
+
+.titel p {
+    font-size: 25px;
+
+    color: rgb(0, 170, 255);
+
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+
+.titelGames {
+    color: white;
+    font-family: 'Pixel Digivolve', sans-serif;
+    font-size: 40px;
+    line-height: 0.8;
+    margin-top: -30px;
+    margin-left: 50px;
+    text-shadow: 15px 15px 15px black;
+}
+
+.titelGames span {
+    color: #FF2D6D;
+    font-size: 95px;
+}
+
+.titelGames p {
+    margin-top: -30px;
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+}
