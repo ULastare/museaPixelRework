@@ -1,82 +1,221 @@
 /* Pixel Digivolve */
 @font-face {
     font-family: 'Pixel Digivolve';
-    src: url('./fonts/Pixel Digivolve.otf') format('opentype');
+    src: url('../fonts/Pixel Digivolve.otf') format('opentype');
 }
 
 /* Alte Haas Grotesk Regular */
 @font-face {
     font-family: 'Alte Haas Grotesk';
-    src: url('./fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+    src: url('../fonts/AlteHaasGroteskRegular.ttf') format('truetype');
     font-weight: 400;
 }
 
 /* Alte Haas Grotesk Bold */
 @font-face {
     font-family: 'Alte Haas Grotesk';
-    src: url('./fonts/AlteHaasGroteskBold.ttf') format('truetype');
+    src: url('../fonts/AlteHaasGroteskBold.ttf') format('truetype');
     font-weight: 700;
 }
 
 
 
 
-
+/* body styling */
 body {
     margin: 0;
     background-image: url(../plaatjes/homepageBackground2.png);
     background-size: cover;
-    overflow: hidden;
+
+    overflow-x: hidden;
+    max-width: 100vw;
 
 }
+
+
+
+
+
+
+/* header styling */
 
 .header {
     padding: 15px;
     padding-left: 35px;
     background-color: rgba(0, 0, 0, 0.7);
     width: 1920px;
+    display: flex;
+    flex-direction: row;
 }
 
-.titel {
+.logo {
     line-height: 0.2;
 }
 
-.titel h1 {
+.logo h1 {
     color: white;
 
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: clamp(36px, 2.5vw, 45px);
 
     font-family: 'Pixel Digivolve', sans-serif;
 }
 
-.titel p {
-    font-size: 25px;
+.logo p {
+    /* font-size: 25px; */
+    font-size: clamp(16px, 1.4vw, 25px);
 
     color: rgb(0, 170, 255);
 
     font-family: 'Alte Haas Grotesk', sans-serif;
     font-weight: 700;
+
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.15s;
+}
 
-.titelGames {
-    color: white;
+.homeKnop {
+
     font-family: 'Pixel Digivolve', sans-serif;
-    font-size: 40px;
-    line-height: 0.8;
-    margin-top: -30px;
+    margin-left: 100px;
+    margin-right: 0;
+    color: white;
+    font-size: clamp(15px, 1.2vw, 25px);
+}
+
+.overOnsKnop {
+    font-family: 'Pixel Digivolve', sans-serif;
+    margin: auto;
     margin-left: 50px;
-    text-shadow: 15px 15px 15px black;
+    margin-right: 300px;
+    color: white;
+    font-size: clamp(15px, 1.2vw, 25px);
 }
 
-.titelGames span {
+a:hover {
     color: #FF2D6D;
-    font-size: 95px;
+    text-decoration: underline;
 }
 
-.titelGames p {
-    margin-top: -30px;
+
+
+/* intro styling */
+
+.intro {
+    /* background shade */
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.55),
+            transparent);
+    text-shadow: 2px 2px 5px black;
+
+    width: 800px;
+    padding: 20px;
+    padding-bottom: 35px;
+
+    border-radius: 5px;
+
+    /* font */
+    font-family: 'Pixel Digivolve', sans-serif;
+
+
+    /* box margins */
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.intro {
+    line-height: 0.8;
+
+    font-size: clamp(20px, 2.2vw, 40px);
+    color: white;
+}
+
+.intro h1 {
+    margin: 0;
+}
+
+.intro span {
+    color: #FF2D6D;
+    font-size: clamp(60px, 5.27vw, 95px);
+    margin: 0;
+}
+
+.intro p {
+    color: white;
+    margin-bottom: 30px;
     font-family: 'Alte Haas Grotesk', sans-serif;
-    font-size: 20px;
-    text-shadow: 3px 3px 3px black;
+    font-size: clamp(16px, 1.1vw, 20px);
+}
+
+.overOnsKnopGroot {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+
+
+/* games styling */
+
+.games {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    width: 93vw;
+
+    padding: 20px;
+    padding-top: auto;
+
+    font-family: 'Pixel Digivolve', sans-serif;
+    font-size: 25;
+}
+
+.plaatjes {
+    /* background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px; */
+
+    margin: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.img1 img,
+.img2 img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    border-radius: 10px;
+}
+
+.img1 img {
+    box-shadow: 0 0 20px 2.5px #00a6ff;
+    border: 3px solid #00a6ff;
+}
+
+.img2 img {
+    box-shadow: 0 0 20px 2.5px #e048cc;
+    border: 3px solid #e048cc;
+
 }
