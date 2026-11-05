@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./subnautica.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>de pixel</h1>
+            <p>GAME MUSEUM</p>
+        </div>
+
+        <a href="../../homepage/mp-homepage.html" class="homeKnop">home</a>
+
+        <a href="" class="overOnsKnop">over ons</a>
+
+        <a href="https://calendar.google.com/calendar" class="bezoekOnsKnop">bezoek ons</a>
+
+        <a href="https://mail.google.com/mail" class="contactKnop">contact</a>
+
+    </div>
+
+
+    <div class="intro">
+        <h1>Sub<span>nautica</span></h1>
+        <div>
+            <p>Subnautica neemt je mee naar een mysterieuze onderwaterwereld <br>
+                op een buitenaardse planeet. Verken de diepe oceaan, ontdek bijzondere <br>
+                zeedieren en verzamel materialen om te overleven. Ontrafel de geheimen van <br>
+                de planeet en ontdek wat er onder het wateroppervlak verborgen ligt.</p>
+        </div>
+        <div class="ontdekKnoppen">
+            <a href="" class="ontdek">ontdek het verhaal</a>
+
+            <a href="https://www.youtube.com/watch?v=Rz2SNm8VguE" class="trailer">bekijk de trailer</a>
+        </div>
+
+    </div>
+
+
+
+    <div class="achtergrond" id="achtergrond"></div>
+
+    <div class="plaatjes">
+        <img src="./plaatjes/subnautica background1.jpg" onclick="veranderAchtergrond(this.src)">
+
+        <img src="./plaatjes/BulbZone_Biome.webp" onclick="veranderAchtergrond(this.src)">
+
+        <img src="./plaatjes/Grand_Reef_Biome.webp" onclick="veranderAchtergrond(this.src)">
+
+        <img src="./plaatjes/Grassy_Plateaus_Biome.webp" onclick="veranderAchtergrond(this.src)">
+
+        <img src="./plaatjes/Jellyshroom_Cave_Biome.webp" onclick="veranderAchtergrond(this.src)">
+
+        <img src="./plaatjes/Mushroom_Forest_Biome.webp" onclick="veranderAchtergrond(this.src)">
+    </div>
+
+    <div class="kaart">
+        <div class="kaart verhaal">
+            <h2>VERHAAL</h2>
+            <p>Ontdek het mysterieuze verhaal achter planeet 4546B.</p>
+            <a href="">LEES HET VERHAAL</a>
+
+        </div>
+
+
+        <div class="placeholder">
+            <a href=""></a>
+        </div>
+
+        <div class="gameplay">
+            <h2>GAMEPLAY</h2>
+            <p>Overleef, verzamel grondstoffen en bouw je eigen basis.</p>
+            <a href="">BEKIJK GAMEPLAY</a>
+
+        </div>
+
+
+        <div class="impact">
+            <h2>IMPACT</h2>
+            <p>Ontdek waarom Subnautica zo bijzonder is.</p>
+            <a href="">LEES MEER</a>
+        </div>
+
+        <!-- <img src="./plaatjes/subnautica background2.png" alt="Verhaal"> -->
+
+        <!-- <img src="./plaatjes/alien.webp" alt="Gameplay"> -->
+
+        <!-- <img src="./plaatjes/reaper_levi.png" alt="Impact"> -->
+    </div>
+
+
+</body>
+
+<script>
+    function veranderAchtergrond(afbeelding) {
+        document.getElementById("achtergrond").style.backgroundImage =
+            "url('" + afbeelding + "')";
+    }
+</script>
+
+</html>
